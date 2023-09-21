@@ -1,9 +1,9 @@
-# New Monkey - Your Source for the Latest News
+# News Monkey - Your Source for the Latest News
 
 
 ## Overview
 
-New Monkey is a modern news website designed to keep you updated with the latest news from around the world. This project utilizes the Tailwind CSS framework for a clean and responsive user interface.
+News Monkey is a modern news website designed to keep you updated with the latest news from around the world. This project utilizes the Tailwind CSS framework for a clean and responsive user interface.
 
 ## Features
 
@@ -26,7 +26,7 @@ New Monkey is a modern news website designed to keep you updated with the latest
    https://github.com/iamsakshigupta/news-app.git
 
 2. # Navigate to the project directory:
-  cd new-monkey
+  cd news-app
 
 3. # Install dependencies:
   npm install
