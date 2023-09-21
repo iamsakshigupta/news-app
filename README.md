@@ -1,5 +1,5 @@
 # News Monkey - Your Source for the Latest News
-
+![New Monkey Logo](https://cdn-icons-png.flaticon.com/128/5061/5061201.png)
 
 ## Overview
 
