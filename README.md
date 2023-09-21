@@ -25,15 +25,16 @@ News Monkey is a modern news website designed to keep you updated with the lates
    ```bash
    https://github.com/iamsakshigupta/news-app.git
 
-2. # Navigate to the project directory:
+2. **Navigate to the project directory:**
   cd news-app
 
-3. # Install dependencies:
+3. **Install dependencies:**
   npm install
 
-4. # Start the development server:
+4. **Start the development server:**
    npm start
-Open your web browser and visit http://localhost:3000 to view the New Monkey website locally.
+   
+   **Open your web browser and visit http://localhost:3000 to view the New Monkey website locally.**
 
-### Usage
+## Usage
 Explore the latest news articles, search for topics of interest, and enjoy a user-friendly news reading experience.
