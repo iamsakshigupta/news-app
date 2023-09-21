@@ -2,16 +2,29 @@ import React, { Component } from 'react'
 
 export class NewsItem extends Component {
   render() {
-    let {title,description}=this.props
+    let { title, description, imageUrl } = this.props
     return (
       <div>
-        <div className="bg-white rounded-lg shadow-lg p-4">
-          <h2 className="text-xl font-semibold">{title}</h2>
-          <p className="text-gray-600">{description}</p>
-          <button className="bg-blue-500 text-white px-4 py-2 mt-4 rounded-lg hover:bg-blue-600">
-            Learn More
-          </button>
+        <div className='bg-white rounded-lg shadow-lg p-4 h-full'>
+          <div className='flex flex-col h-full w-full'>
+            <div className='flex-shrink-0'>
+              <img
+                src={imageUrl}
+                alt='Card Image'
+                className='w-full h-48 rounded-lg object-cover'
+              />
+            </div>
+            <div className='flex-grow'>
+              <h2 className='text-xl font-semibold mt-3'>{title}</h2>
+              <p className='text-gray-600 mt-3'>{description}</p>
+              <button className='bg-blue-500 text-white px-4 py-2 mt-5 rounded-lg hover:bg-blue-600'>
+                Learn More
+              </button>
+            </div>
+          </div>
         </div>
+
+
       </div>
     )
   }
