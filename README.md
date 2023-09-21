@@ -1,6 +1,5 @@
 # New Monkey - Your Source for the Latest News
 
-![New Monkey Logo](logo.png) _(If you have a logo)_
 
 ## Overview
 
@@ -12,13 +11,6 @@ New Monkey is a modern news website designed to keep you updated with the latest
 - **Responsive Design:** Enjoy a seamless user experience on both desktop and mobile devices.
 - **Search Functionality:** Easily find news articles by searching for keywords or topics.
 - **Tailwind CSS:** Utilizes the Tailwind CSS framework for clean and customizable styling.
-
-
-## Screenshots
-
-![Homepage]("C:\Users\saksh\Desktop\Projects\React\news-app\ArticlePage.png")
-
-![Article Page]("C:\Users\saksh\Downloads\Screenshot (46).png")
 
 ## Getting Started
 
