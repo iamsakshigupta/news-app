@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# New Monkey - Your Source for the Latest News
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![New Monkey Logo](logo.png) _(If you have a logo)_
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+New Monkey is a modern news website designed to keep you updated with the latest news from around the world. This project utilizes the Tailwind CSS framework for a clean and responsive user interface.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Latest News:** Stay informed with up-to-the-minute news articles from various categories.
+- **Responsive Design:** Enjoy a seamless user experience on both desktop and mobile devices.
+- **Search Functionality:** Easily find news articles by searching for keywords or topics.
+- **Tailwind CSS:** Utilizes the Tailwind CSS framework for clean and customizable styling.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Homepage]("C:\Users\saksh\Desktop\Projects\React\news-app\ArticlePage.png")
 
-### `npm run build`
+![Article Page]("C:\Users\saksh\Downloads\Screenshot (46).png")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js and npm installed on your machine.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   https://github.com/iamsakshigupta/news-app.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. # Navigate to the project directory:
+  cd new-monkey
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. # Install dependencies:
+  npm install
 
-## Learn More
+4. # Start the development server:
+   npm start
+Open your web browser and visit http://localhost:3000 to view the New Monkey website locally.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Usage
+Explore the latest news articles, search for topics of interest, and enjoy a user-friendly news reading experience.
