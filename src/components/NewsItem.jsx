@@ -5,7 +5,7 @@ export class NewsItem extends Component {
     let { title, description, imageUrl, newsUrl } = this.props
     return (
       <div>
-        <div className='bg-white rounded-lg shadow-lg p-4 h-full'>
+        <div className='bg-white dark:bg-zinc-800 rounded-lg shadow-lg p-4 h-full'>
           <div className='flex flex-col h-full w-full'>
             <div className='flex-shrink-0'>
               <img
@@ -14,11 +14,11 @@ export class NewsItem extends Component {
                 className='w-full h-48 rounded-lg object-cover'
               />
             </div>
-            <div className='flex-grow'>
+            <div className='flex-grow dark:text-white'>
               <h2 className='text-xl font-semibold mt-3'>{title}</h2>
               <p className='text-gray-600 mt-3 mb-7'>{description}</p>
               
-              <a className='bg-blue-500 text-white px-4 py-2 mt-5 rounded-lg hover:bg-blue-600' href={newsUrl} target='_blank'>
+              <a className='bg-red-500 text-white px-5 py-2 mt-5 rounded-lg hover:bg-red-700' href={newsUrl} target='_blank'>
                 Read More
               </a>
               {/* <button className='bg-blue-500 text-white px-4 py-2 mt-5 rounded-lg hover:bg-blue-600'>
