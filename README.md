@@ -1,10 +1,9 @@
-# New Monkey - Your Source for the Latest News
-
-![New Monkey Logo](logo.png) _(If you have a logo)_
+# News Monkey - Your Source for the Latest News
+![New Monkey Logo](https://cdn-icons-png.flaticon.com/128/5061/5061201.png)
 
 ## Overview
 
-New Monkey is a modern news website designed to keep you updated with the latest news from around the world. This project utilizes the Tailwind CSS framework for a clean and responsive user interface.
+News Monkey is a modern news website designed to keep you updated with the latest news from around the world. This project utilizes the Tailwind CSS framework for a clean and responsive user interface.
 
 ## Features
 
@@ -13,12 +12,12 @@ New Monkey is a modern news website designed to keep you updated with the latest
 - **Search Functionality:** Easily find news articles by searching for keywords or topics.
 - **Tailwind CSS:** Utilizes the Tailwind CSS framework for clean and customizable styling.
 
-
 ## Screenshots
 
-![Homepage]("C:\Users\saksh\Desktop\Projects\React\news-app\ArticlePage.png")
+![Homepage](https://github.com/iamsakshigupta/news-app/blob/master/Homepage.png)
 
-![Article Page]("C:\Users\saksh\Downloads\Screenshot (46).png")
+![Article Page](https://github.com/iamsakshigupta/news-app/blob/master/ArticlePage.png)
+
 
 ## Getting Started
 
@@ -33,15 +32,16 @@ New Monkey is a modern news website designed to keep you updated with the latest
    ```bash
    https://github.com/iamsakshigupta/news-app.git
 
-2. # Navigate to the project directory:
-  cd new-monkey
+2. **Navigate to the project directory:**
+  cd news-app
 
-3. # Install dependencies:
+3. **Install dependencies:**
   npm install
 
-4. # Start the development server:
+4. **Start the development server:**
    npm start
-Open your web browser and visit http://localhost:3000 to view the New Monkey website locally.
+   
+   **Open your web browser and visit http://localhost:3000 to view the New Monkey website locally.**
 
-### Usage
+## Usage
 Explore the latest news articles, search for topics of interest, and enjoy a user-friendly news reading experience.
