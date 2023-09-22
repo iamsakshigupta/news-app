@@ -261,6 +261,15 @@ export class NewsCard extends Component {
       loading: false
     }
   }
+  async componentDidMount(){
+    let url="https://newsapi.org/v2/top-headlines?country=in&apiKey=9796962f8b0f43398523fd4a4b557f70";
+    let data= await fetch(url);
+    let parsedData=await data.json()
+    console.log(parsedData);
+    this.setState({articles:parsedData.articles})
+
+  }
+
   render() {
     return (
       <div>

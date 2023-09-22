@@ -9,7 +9,7 @@ export class NewsItem extends Component {
           <div className='flex flex-col h-full w-full'>
             <div className='flex-shrink-0'>
               <img
-                src={imageUrl}
+                src={!imageUrl?"https://images.unsplash.com/photo-1504465039710-0f49c0a47eb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80":imageUrl}
                 alt='Card Image'
                 className='w-full h-48 rounded-lg object-cover'
               />
