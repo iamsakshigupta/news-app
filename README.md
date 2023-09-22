@@ -12,6 +12,13 @@ News Monkey is a modern news website designed to keep you updated with the lates
 - **Search Functionality:** Easily find news articles by searching for keywords or topics.
 - **Tailwind CSS:** Utilizes the Tailwind CSS framework for clean and customizable styling.
 
+## Screenshots
+
+![Homepage](https://github.com/iamsakshigupta/news-app/blob/master/Homepage.png)
+
+![Article Page](https://github.com/iamsakshigupta/news-app/blob/master/ArticlePage.png)
+
+
 ## Getting Started
 
 ### Prerequisites
