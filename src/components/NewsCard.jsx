@@ -258,17 +258,46 @@ export class NewsCard extends Component {
     console.log("I am a constructor from News component")
     this.state = {
       articles: this.articles,
-      loading: false
+      loading: false,
+      page: 1,
     }
   }
-  async componentDidMount(){
-    let url="https://newsapi.org/v2/top-headlines?country=in&apiKey=9796962f8b0f43398523fd4a4b557f70";
-    let data= await fetch(url);
-    let parsedData=await data.json()
+  async componentDidMount() {
+    let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=9796962f8b0f43398523fd4a4b557f70&page=1&pageSize=20";
+    let data = await fetch(url);
+    let parsedData = await data.json()
     console.log(parsedData);
-    this.setState({articles:parsedData.articles})
+    this.setState({ articles: parsedData.articles, totalResults: parsedData.totalResults })
 
   }
+  handlePrevClick = async () => {
+    console.log("previous");
+    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=9796962f8b0f43398523fd4a4b557f70&page=${this.state.page - 1}&pageSize=20`;
+    let data = await fetch(url);
+    let parsedData = await data.json()
+    console.log(parsedData);
+    this.setState({
+      page: this.state.page - 1,
+      articles: parsedData.articles
+    })
+  }
+  handleNextClick = async () => {
+    console.log("next");
+    if(this.state.page + 1> Math.ceil(this.state.totalResults/20)){
+
+    }
+    else{
+    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=9796962f8b0f43398523fd4a4b557f70&page=${this.state.page + 1}&pageSize=20`;
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    console.log(parsedData);
+    this.setState({
+      page: this.state.page + 1,
+      articles: parsedData.articles
+    });
+  }
+  }
+
 
   render() {
     return (
@@ -288,25 +317,31 @@ export class NewsCard extends Component {
               };
 
               // Truncate the title to 5 words and the description to 10 words
-              const truncatedTitle = truncateText(element.title, 10);
+              const truncatedTitle = truncateText(element.title, 5);
               // const truncatedDescription = truncateText(element.description, 3);
               return (
                 <div className='w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 px-2 mb-4' key={element.url}>
-                  <NewsItem title={truncatedTitle}  imageUrl={element.urlToImage} newsUrl={element.url} />               
-                 </div>
+                  <NewsItem title={truncatedTitle} imageUrl={element.urlToImage} newsUrl={element.url} />
+                </div>
               );
             })}
 
 
 
-            
+
           </div>
           <div className='text-center my-10'>
-            <button className='px-5 py-2 mx-2 bg-red-500 text-white rounded-lg hover:bg-red-700'>
-              Previous
+            <button
+              disabled={this.state.page <= 1}
+              className={`px-5 py-2 mx-2 ${this.state.page <= 1 ? 'bg-gray-300 text-gray-500' : 'bg-red-500 text-white hover:bg-red-700'} rounded-lg`}
+              onClick={this.handlePrevClick}
+            >
+              &larr; Previous
             </button>
-            <button className='px-5 py-2 mx-2 bg-red-500 text-white rounded-lg hover:bg-red-700'>
-              Next
+
+
+            <button className={`px-5 py-2 mx-2 ${this.state.page + 1> Math.ceil(this.state.totalResults/20) ? 'bg-gray-300 text-gray-500' : 'bg-red-500 text-white hover:bg-red-700'} rounded-lg`} onClick={this.handleNextClick}>
+              Next &rarr;
             </button>
           </div>
 

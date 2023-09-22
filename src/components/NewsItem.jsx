@@ -15,10 +15,10 @@ export class NewsItem extends Component {
               />
             </div>
             <div className='flex-grow dark:text-white'>
-              <h2 className='text-xl font-semibold mt-3'>{title}</h2>
-              <p className='text-gray-600 mt-3 mb-7'>{description}</p>
+              <h2 className='text-xl font-semibold my-5'>{title}</h2>
               
-              <a className='bg-red-500 text-white px-5 py-2 mt-5 rounded-lg hover:bg-red-700' href={newsUrl} target='_blank'>
+              
+              <a className='bg-red-500 text-white px-5 py-2 mt-7 rounded-lg hover:bg-red-700' href={newsUrl} target='_blank'>
                 Read More
               </a>
               {/* <button className='bg-blue-500 text-white px-4 py-2 mt-5 rounded-lg hover:bg-blue-600'>
